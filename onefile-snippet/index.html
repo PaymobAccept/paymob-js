@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flash Checkout</title>
+    </head>
+    <body>
+        <div id="pay-button"></div>
+        <script src="https://nextstagingenv.s3.amazonaws.com/js/v1/paymob.js"></script>
+
+        <script>
+            fetch("https://next-stg.paymobsolutions.com/marketplace/secret/ibiza/").then(function (response) {
+                    return response.json();
+                }).then(function (json) {
+                    Paymob("pkt_ocyiPARECljo1duevlMSKpn3beCz9z5h").checkoutButton(json.client_secret).mount("#pay-button");
+                }).catch(function (err) {
+                    console.error(err);
+                });
+        </script>
+    </body>
+</html>
