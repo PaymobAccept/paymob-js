@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
     <body>
         <!-- Required div to display paymob checkout button inside, with any id to be passed in mount() method. ! -->
         <div id="paymob-checkout"></div>
@@ -7,9 +10,11 @@
         <script src="https://flashjs.paymob.com/v1/paymob.js"></script>
         <script>
             // Request an intention creation from your marketplace APIs and confirm the payment using the client_secret.
-            fetch("https://api.yor_backend.com").then(function (response) {
+            fetch("https://api.yor_backend.com")
+                .then(function (response) {
                     return response.json();
-                }).then(function (json) {
+                })
+                .then(function (json) {
                     // client_secret is your customer reference for the created intention, and it's used for one time only.
                     Paymob("your_public_key").checkoutButton(json.client_secret).mount("#paymob-checkout");
                 })
