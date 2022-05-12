@@ -25,9 +25,9 @@ inside the files you will find the below with updating example:
 | `checkoutButton()`  |The function responsible for asking `Paymob()` to get ready to start the magic through the checkout with paymob button.| - `client_secret` is your customer reference for the created intention, and it's used for one time only.  |string|   |
 | `mount()`  |after communications between `Paymob()` and `checkoutButton()` it's time to mount the button in UI for letting your customers start their journey.| - `selector` a CSS selector for the HTML element in your DOM to mount the button inside, we are strongly recommending using `id`.   |string|   |
 
- ## Backend Endpoints Refrence:
+ ## Backend Endpoints Reference:
 
-- first request is for intention inquires like avilable payment methods and transaction metadata. 
+- First request is for intention inquires like avilable payment methods and transaction metadata. 
 
 URL: `https://flashapi.paymob.com/v1/intention/element/public_key/client_secret/`
 
