@@ -1,5 +1,5 @@
 ## Flash checkout integration handbook
-flash integration guid.
+Flash Integration Guide.
 
 ## What's Inside:
 - Flash integration sample in one file. 
