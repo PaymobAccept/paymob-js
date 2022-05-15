@@ -1,9 +1,9 @@
-## Flash checkout integration handbook
-Flash Integration Guide.
+## Paymob flash checkout integration handbook
+Paymob Flash Integration Guide.
 
 ## What's Inside:
-- Flash integration sample in one file. 
-- Flash integration sample in two files. 
+- Paymob flash integration sample in one file. 
+- Paymob flash integration sample in two files. 
 
 ## How it works:
 - just drag and drop index.html file in the browser.
