@@ -1,7 +1,7 @@
-fetch("https://next-stg.paymobsolutions.com/marketplace/secret/ibiza/").then(function (response) {
+fetch("https://next-stg.paymobsolutions.com/next/api/v1/marketplace/intention/").then(function (response) {
         return response.json();
     }).then(function (json) {
-        Paymob("pkt_ocyiPARECljo1duevlMSKpn3beCz9z5h").checkoutButton(json.client_secret).mount("#paymob-checkout");
+        Paymob("pkl_iCkDYopU6LIibxzIGjqmKOiW0kYAPCx8").checkoutButton(json.client_secret).mount("#paymob-checkout");
     }).catch(function (err) {
         console.error(err);
     });
