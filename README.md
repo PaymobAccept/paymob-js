@@ -32,11 +32,13 @@ inside the files you will find the below with updating example:
 - SDK will accept public key and client secret to complete the checkout process.
 - On Paymob button click will open Paymob elements popup or view.
 - The first view for paymob elements is for authentication with the two options for signing or completing the checkout as a guest.
-  ![Login](./images/login.png)
+
+![Login](./images/login.png)
 #### Authentication flow.
 - In the case of signing with different OAuth providers like Google, Facebook, or apple. we follow every provider integration step for the web or mobile also to get the final authentication UI.
 example for google:
-  ![Login](./images/google-ui.png)
+
+  ![Google-UI](./images/google-ui.png)
 - After completing, the authentication with the provider (Google or Facebook) successfully the provider will return a code. 
 - `Paymob element` will sent this code to `Paymob API`. example for the request to the staging server down below:
 
@@ -98,7 +100,7 @@ Response:
 ```
 
 So the most essential piece of data here is the `payment_methods` list, feel free to store `intention_detail` and `client_secret` you will need later. now we have the payment methods and we can render it to the next UI view which is payment details.
-  ![Login](./images/payment-methods-view.png)
+  ![Payment-Methods_View](./images/payment-methods-view.png)
 
 - Another request is required in case of a user logged-in flow for getting the user saved cards so can list in the UI.
 example for the request to the staging server down below:
