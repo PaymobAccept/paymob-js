@@ -139,6 +139,31 @@ So now we have the saved card list and can display the card list in the UI.
 - we just string from the payment or intention details request. 
 - Every payment method pay request is explained in paymob docs or postman collection.
 
+#### Remove saved cards
+- To remove saved cards. For example for the request to the staging server down below:
+
+```
+Request URL: https://next-stg.paymobsolutions.com/v1/customer/token/revoke/
+Method: POST
+Request headers: {authorization: "token xxxx"} // token from the auth request.
+Body: 
+{
+   "token_ids":[
+      "cct_***" // card_id
+   ],
+   "public_key":"pk_***",
+   "client_secret":"csk_***"
+}
+
+Response: 
+[
+   {
+      "id":"***",
+      "revoked":true,
+      "object":"customercardtoken"
+   }
+]
+```
  ## Backend Endpoints Reference:
 
 - First request is for intention inquires like avilable payment methods and transaction metadata. 
