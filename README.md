@@ -316,3 +316,12 @@ METHOD: `POST`
    }
 }
 ```
+
+## Confirm API response:
+
+### Card Payment:
+After sending the payment details to `confirm` API, it sends mainly 3 statuses inside `requirement` object from the response. for the next action to handle on the client side.
+
+- `success`: the transaction was completed successfully.
+- `declined`: the transaction was filed.
+- `pending`: the transition is pending another action to be completed successfully. in this case, API return also `redirect_url` for the page responsible for this pended action.
