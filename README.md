@@ -43,7 +43,7 @@ example for google:
 - `Paymob element` will sent this code to `Paymob API`. example for the request to the staging server down below:
 
 ```
-Request URL: https://next-stg.paymoor pabsolutions.com/api/login/social/knox_user/
+Request URL: https://next-stg.paymobsolutions.com/api/login/social/knox_user/
 Method: POST
 Body: 
 {
